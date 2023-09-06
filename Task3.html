@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>HTML Task 3</title>
+        <style>
+            .links_box {
+                padding: 20px;
+            }
+            .links_box >a{
+                text-decoration: none;
+                border-right: 1px;
+            }
+            .links_box >a:not(:last-child)::after {
+                content: " | ";
+            }
+            .links_box >a:last-child {
+                border-right: none;
+                margin-right: 0;
+            }
+            .links_container {
+                background-color: rgb(223, 220, 220);
+                max-width: 600px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="links_container">
+            <ul class="links_box">
+                <P>Click any of the following links</P>
+                <a href="https://www.example.com" target="_blank">Opens in New</a>
+                <a href="https://www.example.com">Opens in Self</a>
+                <a href="https://www.example.com" target="_parent">Opens in Parent</a>
+                <a href="https://www.example.com" target="_top">Opens in Body</a>
+                <a href="mailto:email@example.com">Send email</a>
+            </ul>
+        </div>
+    </body>
+</html>
